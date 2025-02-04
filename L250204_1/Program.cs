@@ -44,6 +44,17 @@
             }
 
             Console.WriteLine("랜덤으로 선택된 숫자: " + string.Join(", ", selectedNumbers));
+
+
+            //// 두번째 방법 Fisher-Yates Shuffle 알고리즘
+            //for (int i = arrNum.Length - 1; i > 0; i--)
+            //{
+            //    int j = rand.Next(i + 1); // 0 ~ i 중에서 랜덤 선택
+            //    (arrNum[i], arrNum[j]) = (arrNum[j], arrNum[i]); // Swap
+            //}
+
+            //// 앞에서 8개 출력
+            //Console.WriteLine("랜덤으로 선택된 숫자: " + string.Join(", ", arrNum[0..8]));
         }
     }
 }
